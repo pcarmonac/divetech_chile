@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <!-- Fondo circular -->
+  <circle cx="100" cy="100" r="100" fill="#f8f9fa"/>
+  
+  <!-- Silueta de persona -->
+  <circle cx="100" cy="80" r="40" fill="#0077b6"/>
+  <path d="M100,120 C65,120 40,150 40,190 L160,190 C160,150 135,120 100,120 Z" fill="#0077b6"/>
+  
+  <!-- Detalles faciales simplificados -->
+  <circle cx="85" cy="75" r="5" fill="#ffffff"/>
+  <circle cx="115" cy="75" r="5" fill="#ffffff"/>
+  <path d="M85,95 Q100,105 115,95" stroke="#ffffff" stroke-width="3" fill="none"/>
+  
+  <!-- Elementos de buceo -->
+  <path d="M70,60 Q100,40 130,60" stroke="#00b4d8" stroke-width="4" fill="none"/>
+  <rect x="85" y="50" width="30" height="10" rx="5" ry="5" fill="#00b4d8"/>
+</svg>

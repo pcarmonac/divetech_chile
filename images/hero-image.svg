@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <!-- Fondo del dashboard -->
+  <rect x="0" y="0" width="800" height="600" rx="15" ry="15" fill="#f8f9fa" stroke="#e0e0e0" stroke-width="2"/>
+  
+  <!-- Barra lateral de navegación -->
+  <rect x="0" y="0" width="200" height="600" rx="15" ry="15" fill="#023e8a"/>
+  
+  <!-- Logo en la barra lateral -->
+  <text x="30" y="50" font-family="Raleway, sans-serif" font-size="24" font-weight="700" fill="#ffffff">DiveTech</text>
+  <text x="30" y="75" font-family="Montserrat, sans-serif" font-size="16" font-weight="500" fill="#ffffff">Chile</text>
+  
+  <!-- Elementos del menú -->
+  <rect x="20" y="120" width="160" height="40" rx="5" ry="5" fill="#0077b6"/>
+  <text x="60" y="145" font-family="Montserrat, sans-serif" font-size="14" fill="#ffffff">Dashboard</text>
+  <circle cx="40" cy="140" r="8" fill="#ffffff"/>
+  
+  <rect x="20" y="170" width="160" height="40" rx="5" ry="5" fill="transparent"/>
+  <text x="60" y="195" font-family="Montserrat, sans-serif" font-size="14" fill="#ffffff">Reservas</text>
+  <circle cx="40" cy="190" r="8" fill="#90e0ef" opacity="0.7"/>
+  
+  <rect x="20" y="220" width="160" height="40" rx="5" ry="5" fill="transparent"/>
+  <text x="60" y="245" font-family="Montserrat, sans-serif" font-size="14" fill="#ffffff">Clientes</text>
+  <circle cx="40" cy="240" r="8" fill="#90e0ef" opacity="0.7"/>
+  
+  <rect x="20" y="270" width="160" height="40" rx="5" ry="5" fill="transparent"/>
+  <text x="60" y="295" font-family="Montserrat, sans-serif" font-size="14" fill="#ffffff">Equipos</text>
+  <circle cx="40" cy="290" r="8" fill="#90e0ef" opacity="0.7"/>
+  
+  <rect x="20" y="320" width="160" height="40" rx="5" ry="5" fill="transparent"/>
+  <text x="60" y="345" font-family="Montserrat, sans-serif" font-size="14" fill="#ffffff">Reportes</text>
+  <circle cx="40" cy="340" r="8" fill="#90e0ef" opacity="0.7"/>
+  
+  <rect x="20" y="370" width="160" height="40" rx="5" ry="5" fill="transparent"/>
+  <text x="60" y="395" font-family="Montserrat, sans-serif" font-size="14" fill="#ffffff">Configuración</text>
+  <circle cx="40" cy="390" r="8" fill="#90e0ef" opacity="0.7"/>
+  
+  <!-- Contenido principal -->
+  <text x="230" y="50" font-family="Raleway, sans-serif" font-size="24" font-weight="700" fill="#333333">Dashboard</text>
+  <text x="230" y="80" font-family="Montserrat, sans-serif" font-size="14" fill="#666666">Bienvenido de vuelta, Buceo Norte - Iquique</text>
+  
+  <!-- Tarjetas de estadísticas -->
+  <rect x="230" y="100" width="170" height="120" rx="10" ry="10" fill="#ffffff" stroke="#e0e0e0" stroke-width="1"/>
+  <text x="250" y="130" font-family="Montserrat, sans-serif" font-size="14" font-weight="600" fill="#333333">Reservas Hoy</text>
+  <text x="250" y="170" font-family="Raleway, sans-serif" font-size="36" font-weight="700" fill="#0077b6">12</text>
+  <text x="290" y="170" font-family="Montserrat, sans-serif" font-size="14" fill="#28a745">+20%</text>
+  
+  <rect x="420" y="100" width="170" height="120" rx="10" ry="10" fill="#ffffff" stroke="#e0e0e0" stroke-width="1"/>
+  <text x="440" y="130" font-family="Montserrat, sans-serif" font-size="14" font-weight="600" fill="#333333">Clientes Activos</text>
+  <text x="440" y="170" font-family="Raleway, sans-serif" font-size="36" font-weight="700" fill="#0077b6">87</text>
+  <text x="480" y="170" font-family="Montserrat, sans-serif" font-size="14" fill="#28a745">+5%</text>
+  
+  <rect x="610" y="100" width="170" height="120" rx="10" ry="10" fill="#ffffff" stroke="#e0e0e0" stroke-width="1"/>
+  <text x="630" y="130" font-family="Montserrat, sans-serif" font-size="14" font-weight="600" fill="#333333">Equipos Disponibles</text>
+  <text x="630" y="170" font-family="Raleway, sans-serif" font-size="36" font-weight="700" fill="#0077b6">45</text>
+  <text x="670" y="170" font-family="Montserrat, sans-serif" font-size="14" fill="#dc3545">-10%</text>
+  
+  <!-- Gráfico de reservas -->
+  <rect x="230" y="240" width="550" height="250" rx="10" ry="10" fill="#ffffff" stroke="#e0e0e0" stroke-width="1"/>
+  <text x="250" y="270" font-family="Montserrat, sans-serif" font-size="16" font-weight="600" fill="#333333">Reservas por Mes</text>
+  
+  <!-- Eje X del gráfico -->
+  <line x1="250" y1="450" x2="750" y2="450" stroke="#e0e0e0" stroke-width="2"/>
+  <text x="270" y="470" font-family="Montserrat, sans-serif" font-size="12" fill="#666666">Ene</text>
+  <text x="320" y="470" font-family="Montserrat, sans-serif" font-size="12" fill="#666666">Feb</text>
+  <text x="370" y="470" font-family="Montserrat, sans-serif" font-size="12" fill="#666666">Mar</text>
+  <text x="420" y="470" font-family="Montserrat, sans-serif" font-size="12" fill="#666666">Abr</text>
+  <text x="470" y="470" font-family="Montserrat, sans-serif" font-size="12" fill="#666666">May</text>
+  <text x="520" y="470" font-family="Montserrat, sans-serif" font-size="12" fill="#666666">Jun</text>
+  <text x="570" y="470" font-family="Montserrat, sans-serif" font-size="12" fill="#666666">Jul</text>
+  <text x="620" y="470" font-family="Montserrat, sans-serif" font-size="12" fill="#666666">Ago</text>
+  <text x="670" y="470" font-family="Montserrat, sans-serif" font-size="12" fill="#666666">Sep</text>
+  <text x="720" y="470" font-family="Montserrat, sans-serif" font-size="12" fill="#666666">Oct</text>
+  
+  <!-- Eje Y del gráfico -->
+  <line x1="250" y1="300" x2="250" y2="450" stroke="#e0e0e0" stroke-width="2"/>
+  <text x="230" y="450" font-family="Montserrat, sans-serif" font-size="12" fill="#666666">0</text>
+  <text x="230" y="400" font-family="Montserrat, sans-serif" font-size="12" fill="#666666">25</text>
+  <text x="230" y="350" font-family="Montserrat, sans-serif" font-size="12" fill="#666666">50</text>
+  <text x="230" y="300" font-family="Montserrat, sans-serif" font-size="12" fill="#666666">75</text>
+  
+  <!-- Datos del gráfico -->
+  <polyline points="270,420 320,400 370,380 420,350 470,370 520,330 570,310 620,330 670,300 720,320" 
+            fill="none" stroke="#0077b6" stroke-width="3"/>
+  
+  <!-- Puntos de datos -->
+  <circle cx="270" cy="420" r="5" fill="#0077b6"/>
+  <circle cx="320" cy="400" r="5" fill="#0077b6"/>
+  <circle cx="370" cy="380" r="5" fill="#0077b6"/>
+  <circle cx="420" cy="350" r="5" fill="#0077b6"/>
+  <circle cx="470" cy="370" r="5" fill="#0077b6"/>
+  <circle cx="520" cy="330" r="5" fill="#0077b6"/>
+  <circle cx="570" cy="310" r="5" fill="#0077b6"/>
+  <circle cx="620" cy="330" r="5" fill="#0077b6"/>
+  <circle cx="670" cy="300" r="5" fill="#0077b6"/>
+  <circle cx="720" cy="320" r="5" fill="#0077b6"/>
+  
+  <!-- Área bajo la curva -->
+  <path d="M270,420 L320,400 L370,380 L420,350 L470,370 L520,330 L570,310 L620,330 L670,300 L720,320 L720,450 L270,450 Z" 
+        fill="#0077b6" opacity="0.1"/>
+  
+  <!-- Próximas reservas -->
+  <rect x="230" y="510" width="550" height="70" rx="10" ry="10" fill="#ffffff" stroke="#e0e0e0" stroke-width="1"/>
+  <text x="250" y="535" font-family="Montserrat, sans-serif" font-size="14" font-weight="600" fill="#333333">Próxima Reserva: Inmersión Avanzada - 14:30</text>
+  <text x="250" y="560" font-family="Montserrat, sans-serif" font-size="14" fill="#666666">4 buceadores - Instructor: Pablo Carmona</text>
+  <rect x="700" y="525" width="60" height="30" rx="15" ry="15" fill="#0077b6"/>
+  <text x="715" y="545" font-family="Montserrat, sans-serif" font-size="12" fill="#ffffff">Ver</text>
+</svg>
