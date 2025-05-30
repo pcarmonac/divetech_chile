@@ -16,10 +16,19 @@
             <div class="logo">
                 <img src="images/logo.svg" alt="DiveTech Chile Logo">
             </div>
-            <nav class="main-nav">
+            
+            <!-- Mobile menu button -->
+            <button class="mobile-menu-toggle" aria-label="Abrir menú" aria-expanded="false">
+                <span class="hamburger"></span>
+            </button>
+            
+            <nav class="main-nav" aria-label="Navegación principal">
                 <ul id="nav-links">
                     <!-- Los enlaces de navegación se cargarán desde content.json -->
                 </ul>
+                <div class="mobile-cta">
+                    <a href="#contacto" class="btn btn-primary">Solicitar Demo</a>
+                </div>
             </nav>
             <div class="cta-button">
                 <a href="#contacto" id="header-cta" class="btn btn-primary">Solicitar Demo</a>
@@ -37,7 +46,11 @@
                 </div>
             </div>
             <div class="hero-image">
-                <img id="hero-image" src="images/hero-image.svg" alt="Equipo de buceo profesional">
+                <img id="hero-image"
+                     src="images/hero-image.svg"
+                     srcset="images/hero-image.svg, images/hero-image-mobile.svg 480w"
+                     sizes="(max-width: 480px) 480px, 100vw"
+                     alt="Equipo de buceo profesional">
             </div>
         </div>
     </section>
@@ -72,7 +85,7 @@
                 <h2 id="testimonials-title"></h2>
                 <p id="testimonials-subtitle"></p>
             </div>
-            <div class="testimonials-slider" id="testimonials-slider">
+            <div class="testimonials-slider" id="testimonials-slider" aria-live="polite">
                 <!-- Los testimonios se cargarán desde content.json -->
             </div>
         </div>

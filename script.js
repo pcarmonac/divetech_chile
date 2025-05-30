@@ -563,4 +563,54 @@ const navLinks = document.querySelectorAll('.main-nav a, .hero-buttons a, .cta a
             testimonialsSlider.scrollLeft = scrollLeft - walk;
         });
     }
+// Mobile menu functionality
+    const mobileMenuToggle = document.createElement('button');
+    mobileMenuToggle.className = 'mobile-menu-toggle';
+    mobileMenuToggle.setAttribute('aria-expanded', 'false');
+    mobileMenuToggle.setAttribute('aria-label', 'Toggle menu');
+    
+    const hamburger = document.createElement('span');
+    hamburger.className = 'hamburger';
+    mobileMenuToggle.appendChild(hamburger);
+    
+    const headerContainer = document.querySelector('.header .container');
+    headerContainer.appendChild(mobileMenuToggle);
+    
+    const mainNav = document.querySelector('.main-nav');
+    const mobileNavLinks = document.querySelectorAll('.main-nav a');
+    
+    // Toggle mobile menu
+    mobileMenuToggle.addEventListener('click', function() {
+        const isExpanded = this.getAttribute('aria-expanded') === 'true';
+        this.setAttribute('aria-expanded', !isExpanded);
+        mainNav.classList.toggle('active');
+        document.body.classList.toggle('menu-open');
+    });
+    
+    // Close menu when clicking outside
+    document.addEventListener('click', function(e) {
+        if (mainNav.classList.contains('active') &&
+            !e.target.closest('.main-nav') &&
+            !e.target.closest('.mobile-menu-toggle')) {
+            mobileMenuToggle.setAttribute('aria-expanded', 'false');
+            mainNav.classList.remove('active');
+            document.body.classList.remove('menu-open');
+        }
+    });
+    
+    // Close menu when clicking on links
+    mobileNavLinks.forEach(link => {
+        link.addEventListener('click', function() {
+            mobileMenuToggle.setAttribute('aria-expanded', 'false');
+            mainNav.classList.remove('active');
+            document.body.classList.remove('menu-open');
+        });
+    });
+    
+    // Add mobile CTA button
+    const mobileCta = document.createElement('a');
+    mobileCta.href = content.header.cta.href;
+    mobileCta.className = `btn btn-primary mobile-cta`;
+    mobileCta.textContent = content.header.cta.text;
+    mainNav.appendChild(mobileCta);
 });
