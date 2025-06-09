@@ -63,9 +63,13 @@ document.addEventListener('DOMContentLoaded', function() {
             
             const featureIcon = document.createElement('div');
             featureIcon.className = 'feature-icon';
-            const icon = document.createElement('i');
-            icon.className = item.icon;
-            featureIcon.appendChild(icon);
+            
+            // Usar el isotipo en lugar del icono de Font Awesome
+            const iconImg = document.createElement('img');
+            iconImg.src = 'images/sin_fondo_isotipo.png';
+            iconImg.alt = 'DiveTech Isotipo';
+            iconImg.className = 'feature-isotipo';
+            featureIcon.appendChild(iconImg);
             
             const title = document.createElement('h3');
             title.textContent = item.title;
