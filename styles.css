@@ -353,7 +353,6 @@ img {
 }
 
 .feature-icon {
-    background-color: #8DDDE0;
     width: 80px;
     height: 80px;
     border-radius: 50%;
@@ -361,6 +360,7 @@ img {
     align-items: center;
     justify-content: center;
     margin-bottom: 1rem;
+    transition: all 0.3s ease;
 }
 
 .feature-isotipo {
@@ -371,7 +371,28 @@ img {
 
 .feature-icon i {
     font-size: 2rem;
-    color: var(--primary-color);
+    color: white;
+}
+
+/* Colores específicos para cada servicio */
+.feature-card:nth-child(1) .feature-icon {
+    background-color: #4285F4; /* Azul para Reservas Online */
+}
+
+.feature-card:nth-child(2) .feature-icon {
+    background-color: #34A853; /* Verde para Gestión de Clientes */
+}
+
+.feature-card:nth-child(3) .feature-icon {
+    background-color: #FBBC05; /* Amarillo para Inventario de Equipos */
+}
+
+.feature-card:nth-child(4) .feature-icon {
+    background-color: #EA4335; /* Rojo para Reportes y Análisis */
+}
+
+.feature-card:hover .feature-icon {
+    transform: scale(1.1);
 }
 
 .feature-card h3 {

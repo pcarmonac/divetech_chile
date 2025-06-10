@@ -64,12 +64,31 @@ document.addEventListener('DOMContentLoaded', function() {
             const featureIcon = document.createElement('div');
             featureIcon.className = 'feature-icon';
             
-            // Usar el isotipo en lugar del icono de Font Awesome
-            const iconImg = document.createElement('img');
-            iconImg.src = 'images/sin_fondo_isotipo.png';
-            iconImg.alt = 'DiveTech Isotipo';
-            iconImg.className = 'feature-isotipo';
-            featureIcon.appendChild(iconImg);
+            // Crear el icono apropiado para cada servicio
+            if (item.title === "Reservas Online") {
+                const icon = document.createElement('i');
+                icon.className = 'fas fa-calendar-alt';
+                featureIcon.appendChild(icon);
+            } else if (item.title === "Gestión de Clientes") {
+                const icon = document.createElement('i');
+                icon.className = 'fas fa-users';
+                featureIcon.appendChild(icon);
+            } else if (item.title === "Inventario de Equipos") {
+                const icon = document.createElement('i');
+                icon.className = 'fas fa-box';
+                featureIcon.appendChild(icon);
+            } else if (item.title === "Reportes y Análisis") {
+                const icon = document.createElement('i');
+                icon.className = 'fas fa-chart-line';
+                featureIcon.appendChild(icon);
+            } else {
+                // Usar el isotipo como fallback
+                const iconImg = document.createElement('img');
+                iconImg.src = 'images/sin_fondo_isotipo.png';
+                iconImg.alt = 'DiveTech Isotipo';
+                iconImg.className = 'feature-isotipo';
+                featureIcon.appendChild(iconImg);
+            }
             
             const title = document.createElement('h3');
             title.textContent = item.title;
